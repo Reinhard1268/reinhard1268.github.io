@@ -1,0 +1,306 @@
+<!-- Trigger rebuild -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reinhard | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    nav {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links li a {
+      color: #c9d1d9;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .logo {
+      font-size: 5rem;
+      color: #58a6ff;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #8b949e;
+    }
+
+    .tagline .tag {
+      display: inline-block;
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      padding: 0.25rem 0.5rem;
+      margin: 0.25rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .project-card {
+      background-color: #161b22;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card h3 {
+      color: #58a6ff;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .about {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 2rem;
+    }
+
+    .terminal-container {
+      flex: 1;
+      min-width: 300px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    .terminal-header {
+      background-color: #21262d;
+      display: flex;
+      padding: 0.5rem;
+    }
+
+    .terminal-button {
+      width: 12px;
+      height: 12px;
+      background-color: #58a6ff;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .terminal-body {
+      padding: 1rem;
+      font-family: monospace;
+      color: #58a6ff;
+    }
+
+    .skills {
+      margin-top: 1rem;
+    }
+
+    .skill-category {
+      margin-bottom: 1rem;
+    }
+
+    .skill-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skill-list li::before {
+      content: "➤ ";
+      color: #58a6ff;
+    }
+
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .social-links a {
+      color: #c9d1d9;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #58a6ff;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .about-text {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo"><i class="fas fa-shield-alt"></i> Reinhard</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="logo">R</div>
+    <h1>Reinhard Amoah</h1>
+<p>EC-Council Trained CCT | Cybersecurity | Threat Hunting | Python Dev</p>
+    <div class="tagline">
+      <span class="tag">#Incident Response</span>
+      <span class="tag">#Python Developer</span>
+      <span class="tag">#Threat Intelligence</span>
+      <span class="tag">#Malware Analysis</span>
+    </div>
+  </header>
+
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3><i class="fas fa-terminal"></i> Apache Log Analyzer</h3>
+        <p>Analyzes Apache logs for anomalies, threats, and traffic patterns using Python.</p>
+        <a href="https://github.com/Reinhard1268/apache-log-analyzer" class="project-link">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-network-wired"></i> Advanced Port Scanner</h3>
+        <p>Scans target hosts for open ports and services using socket and threading in Python.</p>
+        <a href="https://github.com/Reinhard1268/advanced-port-scanner" class="project-link">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-bug"></i> Malware Outbreak IR Report</h3>
+        <p>A simulated malware outbreak incident response report detailing response steps, impact, and recommendations.</p>
+        <a href="https://github.com/Reinhard1268/malware-IR-report" class="project-link">Read Report</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm Reinhard Amoah, an EC-Council trained Cybersecurity Technician with a passion for threat hunting, malware analysis, and Python development. I'm self-driven and committed to building tools and automation for modern security operations.</p>
+      <p>I build real-world cybersecurity projects, document detailed incident response reports, and continuously learn to master ethical hacking, SOC skills, and secure programming.</p>
+
+      <div class="skills">
+        <div class="skill-category">
+          <h3>Cybersecurity Skills</h3>
+          <ul class="skill-list">
+            <li>Incident Response</li>
+            <li>Threat Hunting</li>
+            <li>Network Monitoring</li>
+            <li>File Integrity Monitoring</li>
+            <li>Port Scanning</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Development</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>Git & GitHub</li>
+            <li>Scapy</li>
+            <li>Socket Programming</li>
+            <li>Web Hosting (GitHub Pages)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">Hello, I'm Reinhard_1268</div>
+        <div class="terminal-line">>>> Threat detected: Initiating response...</div>
+        <div class="terminal-line">>>> Python script active: Monitoring logs...</div>
+        <div class="terminal-line">>>> Report generated. GitHub updated ✅</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="social-links">
+      <a href="https://github.com/Reinhard1268" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:reinhardsec@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/reinhard1268" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>© 2025 Reinhard Amoah. Built with passion and Python 🐍</p>
+  </footer>
+
+</body>
+</html>
